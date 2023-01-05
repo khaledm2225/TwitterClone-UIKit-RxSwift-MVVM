@@ -14,6 +14,7 @@ extension UIView{
                     leading:  NSLayoutXAxisAnchor? = nil, paddingLeading:  CGFloat = 0,
                     bottom:   NSLayoutYAxisAnchor? = nil, paddingBottom:   CGFloat = 0,
                     trailing: NSLayoutXAxisAnchor? = nil, paddingTrailing: CGFloat = 0,
+                    centerX:  NSLayoutXAxisAnchor? = nil, centerY: NSLayoutYAxisAnchor? = nil,
                     width: CGFloat? = nil, height: CGFloat? = nil){
         
         translatesAutoresizingMaskIntoConstraints = false
@@ -40,6 +41,14 @@ extension UIView{
         
         if let height = height {
             heightAnchor.constraint(equalToConstant: height).isActive = true
+        }
+        
+        if let centerX = centerX {
+            centerXAnchor.constraint(equalTo: centerX).isActive = true
+        }
+        
+        if let centerY = centerY {
+            centerYAnchor.constraint(equalTo: centerY).isActive = true
         }
         
     }
@@ -111,4 +120,7 @@ extension UIColor {
 //MARK: - Images
 extension UIImage{
     static let plus = UIImage(systemName: "plus.bubble")!
+    static let twitterLogo = UIImage(named: "twitterLogo")!
+    static let mail = UIImage(systemName: "envelope")!
+    static let password = UIImage(systemName: "lock")!
 }
