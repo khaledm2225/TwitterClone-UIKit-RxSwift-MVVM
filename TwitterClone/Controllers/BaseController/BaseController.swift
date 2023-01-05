@@ -29,7 +29,10 @@ class BaseController: UIViewController {
         
     }
     
-    //MARK: -
+    //MARK: - Navigate To
+    func navigatrTo(_ nextController: UIViewController){
+        
+    }
     
     
     

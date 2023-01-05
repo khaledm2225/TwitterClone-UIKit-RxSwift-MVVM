@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		292EF0D62965E9E600FE2887 /* OTPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292EF0D52965E9E600FE2887 /* OTPController.swift */; };
-		292EF0D82965EA0100FE2887 /* MobileLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292EF0D72965EA0100FE2887 /* MobileLoginController.swift */; };
-		292EF0DA2965EA1200FE2887 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292EF0D92965EA1200FE2887 /* SignUpController.swift */; };
+		292EF0D82965EA0100FE2887 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292EF0D72965EA0100FE2887 /* LoginController.swift */; };
 		292EF0E02965EC4500FE2887 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292EF0DF2965EC4500FE2887 /* BaseController.swift */; };
 		2989705529664B6600FB62B8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2989705429664B6600FB62B8 /* Utilities.swift */; };
+		2989705729668BC200FB62B8 /* RegisterationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2989705629668BC200FB62B8 /* RegisterationController.swift */; };
 		29FD007D2965098500E98BB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FD007C2965098500E98BB7 /* AppDelegate.swift */; };
 		29FD007F2965098500E98BB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FD007E2965098500E98BB7 /* SceneDelegate.swift */; };
 		29FD00862965098600E98BB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29FD00852965098600E98BB7 /* Assets.xcassets */; };
@@ -25,11 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		292EF0D52965E9E600FE2887 /* OTPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPController.swift; sourceTree = "<group>"; };
-		292EF0D72965EA0100FE2887 /* MobileLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileLoginController.swift; sourceTree = "<group>"; };
-		292EF0D92965EA1200FE2887 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		292EF0D72965EA0100FE2887 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		292EF0DF2965EC4500FE2887 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		2989705429664B6600FB62B8 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		2989705629668BC200FB62B8 /* RegisterationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterationController.swift; sourceTree = "<group>"; };
 		29FD00792965098500E98BB7 /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29FD007C2965098500E98BB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29FD007E2965098500E98BB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,9 +56,8 @@
 		292EF0D22965E9CA00FE2887 /* AuthControllers */ = {
 			isa = PBXGroup;
 			children = (
-				292EF0D72965EA0100FE2887 /* MobileLoginController.swift */,
-				292EF0D52965E9E600FE2887 /* OTPController.swift */,
-				292EF0D92965EA1200FE2887 /* SignUpController.swift */,
+				292EF0D72965EA0100FE2887 /* LoginController.swift */,
+				2989705629668BC200FB62B8 /* RegisterationController.swift */,
 			);
 			path = AuthControllers;
 			sourceTree = "<group>";
@@ -110,8 +107,8 @@
 		29FD009129650A7F00E98BB7 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				29FD00A329652B6100E98BB7 /* Extensions.swift */,
 				2989705429664B6600FB62B8 /* Utilities.swift */,
+				29FD00A329652B6100E98BB7 /* Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -229,16 +226,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				29FD00A029650E4800E98BB7 /* NotificationsController.swift in Sources */,
-				292EF0D82965EA0100FE2887 /* MobileLoginController.swift in Sources */,
+				292EF0D82965EA0100FE2887 /* LoginController.swift in Sources */,
 				29FD00A229650E6D00E98BB7 /* ConversationsController.swift in Sources */,
 				29FD007D2965098500E98BB7 /* AppDelegate.swift in Sources */,
 				2989705529664B6600FB62B8 /* Utilities.swift in Sources */,
 				29FD00A429652B6100E98BB7 /* Extensions.swift in Sources */,
 				29FD009E29650E2800E98BB7 /* ExploreController.swift in Sources */,
 				29FD009829650BCD00E98BB7 /* MainTabController.swift in Sources */,
-				292EF0D62965E9E600FE2887 /* OTPController.swift in Sources */,
+				2989705729668BC200FB62B8 /* RegisterationController.swift in Sources */,
 				29FD007F2965098500E98BB7 /* SceneDelegate.swift in Sources */,
-				292EF0DA2965EA1200FE2887 /* SignUpController.swift in Sources */,
 				292EF0E02965EC4500FE2887 /* BaseController.swift in Sources */,
 				29FD009C29650DE000E98BB7 /* FeedController.swift in Sources */,
 			);
