@@ -12,8 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        configNavBAr()
-        configTabBar()
+      configureUI()
         // Override point for customization after application launch.
         return true
     }
@@ -32,9 +31,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+}
+
+
+
+
+//MARK: - UI Configurtion
+extension AppDelegate {
     
-    //MARK: - TODO
-    func configNavBAr(){
+    func configureUI(){
+        configNavBar()
+        configTabBar()
+        
+    }
+    
+    private func configNavBar(){
         //Fix navigation bar color change issue in ios 15
         if #available(iOS 15.0, *) {
             let navBarAppearance = UINavigationBarAppearance()
@@ -47,7 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    func configTabBar(){
+    private func configTabBar(){
         if #available(iOS 15.0, *) {
             let tabAppearance = UITabBarAppearance()
             tabAppearance.configureWithOpaqueBackground()
@@ -59,6 +70,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     
-
+    
+    
 }
-

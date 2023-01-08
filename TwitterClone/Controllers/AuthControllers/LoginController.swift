@@ -50,12 +50,9 @@ class LoginController: UIViewController {
     }()
     
     private let dontHaveAccountButton: UIButton = {
-       
         let button = Utilities().attributedButton("Don't have an account?", " SignUp")
         button.addTarget(self, action: #selector(handleShowingSignUp), for: .touchUpInside)
-        
         return button
-        
     }()
 
     
@@ -130,7 +127,8 @@ extension LoginController {
     
     @objc
     func handleShowingSignUp () {
-        print("handleShowingSignUp")
+        let nextController = RegisterationController()
+        navigationController?.pushViewController(nextController, animated: true)
     }
     
 }

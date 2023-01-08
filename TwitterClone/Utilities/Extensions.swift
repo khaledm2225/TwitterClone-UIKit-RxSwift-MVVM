@@ -124,4 +124,5 @@ extension UIImage{
     static let mail = UIImage(systemName: "envelope")!
     static let password = UIImage(systemName: "lock")!
     static let twitterLogoWhite = UIImage(named: "twitter_logo_white")!
+    static let user = UIImage(systemName: "person.fill")!
 }

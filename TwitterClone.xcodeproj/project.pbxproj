@@ -70,6 +70,25 @@
 			path = BaseController;
 			sourceTree = "<group>";
 		};
+		298970582966934400FB62B8 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				29FD009729650BCD00E98BB7 /* MainTabController.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		298970592966936400FB62B8 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				29FD009B29650DE000E98BB7 /* FeedController.swift */,
+				29FD009D29650E2800E98BB7 /* ExploreController.swift */,
+				29FD009F29650E4800E98BB7 /* NotificationsController.swift */,
+				29FD00A129650E6D00E98BB7 /* ConversationsController.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
 		29FD00702965098400E98BB7 = {
 			isa = PBXGroup;
 			children = (
@@ -125,11 +144,8 @@
 			children = (
 				292EF0DE2965EC3C00FE2887 /* BaseController */,
 				292EF0D22965E9CA00FE2887 /* AuthControllers */,
-				29FD009729650BCD00E98BB7 /* MainTabController.swift */,
-				29FD009B29650DE000E98BB7 /* FeedController.swift */,
-				29FD009D29650E2800E98BB7 /* ExploreController.swift */,
-				29FD009F29650E4800E98BB7 /* NotificationsController.swift */,
-				29FD00A129650E6D00E98BB7 /* ConversationsController.swift */,
+				298970582966934400FB62B8 /* MainTabBar */,
+				298970592966936400FB62B8 /* Tabs */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
